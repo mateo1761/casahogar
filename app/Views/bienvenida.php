@@ -91,34 +91,59 @@
 		</section>
 
 		<section>
-			<div class="container mt-5">
-				<div class="row d-flex justify-content-center">
+			<div class="container">
+				<div class="row d-flex justify-content-center mt-5 mb-5">
+					<div class="col-1">
+						<img src="<?= base_url('public/img/bird-icon.png') ?>" class="img-fluid zoom" alt="icono1">
+						<h5 class="text-center">Aves</h5>
+					</div>
+					<div class="col-1">
+						<img src="<?= base_url('public/img/cat-icon.png') ?>" class="img-fluid zoom" alt="icono2">
+						<h5 class="text-center">Gatos</h5>
+					</div>
+					<div class="col-1">
+						<img src="<?= base_url('public/img/fish-icon.png') ?>" class="img-fluid zoom" alt="icono4">
+						<h5 class="text-center">Peces</h5>
+					</div>
+					<div class="col-1">
+						<img src="<?= base_url('public/img/dog-icon.png')?>" class="img-fluid zoom" alt="icono3">
+						<h5 class="text-center">Perros</h5>
+					</div>
+					<div class="col-1">
+						<img src="<?= base_url('public/img/horse-icon.png') ?>" class="img-fluid zoom" alt="icono5">
+						<h5 class="text-center">Caballos</h5>
+					</div>
+					<!--
 					<div class="col-8 text-center">
 						<ul class="lista d-flex justify-content-center">
 							<li>
-								<img src="<?= base_url('public/img/bird-icon.png') ?>" alt="icono1">
+								<img src="<?= base_url('public/img/bird-icon.png') ?>" class="zoom" alt="icono1">
 								<h5>Aves</h5>
 							</li>
 							<li>
-								<img src="<?= base_url('public/img/cat-icon.png') ?>" alt="icono2">
+								<img src="<?= base_url('public/img/cat-icon.png') ?>" class="zoom" alt="icono2">
 								<h5>Gatos</h5>
 							</li>
 							<li>
-								<img src="<?= base_url('public/img/dog-icon.png')?>" alt="icono3">
+								<img src="<?= base_url('public/img/dog-icon.png')?>" class="zoom" alt="icono3">
 								<h5>Perros</h5>
 							</li>
 							<li>
-								<img src="<?= base_url('public/img/fish-icon.png') ?>" alt="icono4">
+								<img src="<?= base_url('public/img/fish-icon.png') ?>" class="zoom" alt="icono4">
 								<h5>Peces</h5>
 							</li>
 							<li>
-								<img src="<?= base_url('public/img/horse-icon.png') ?>" alt="icono5">
+								<img src="<?= base_url('public/img/horse-icon.png') ?>" class="zoom" alt="icono5">
 								<h5>Caballos</h5>
 							</li>
 						</ul>
-					</div>
+					</div>-->
 				</div>
 			</div>
+		</section>
+
+		<section class="fondoapp">
+			
 		</section>
 	</main>
 

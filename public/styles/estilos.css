@@ -8,6 +8,23 @@
     background-color: rgba(12, 175, 240, 0.979);
 }
 
+.fondoapp
+{
+    background-image: url('../img/imagenfondo.jpg');
+    background-attachment: fixed;
+    height: 400px;
+}
+
+.zoom
+{
+    transition: transform .2s;
+}
+
+.zoom:hover
+{
+    transform: scale(1.3);
+}
+
 .lista
 {
     list-style: none;
