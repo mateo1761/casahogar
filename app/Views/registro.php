@@ -12,54 +12,103 @@
     <title>Document</title>
 </head>
 <body>
-    <header></header>
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+			<div class="container-fluid">
+				<a class="navbar-brand fuente" href="#">
+					<i class="fas fa-paw"></i>
+					Casa hogar
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="<?= site_url('/productos/registro') ?>">Registro productos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="<?= site_url('/animales/registro') ?>">Registro animales</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+    </header>
 
     <main>
-        <div class="container mt-5">
-            <div class="row d-flex flex-row-reverse">
-                <div class="col-8 col-md-5">
-                    <h2 class="fuente mb-5">Tienda gamer</h2>
-                    <form>
-                        <div class="mb-3">
-                            <label class="form-label">Ingrese su correo electrónico</label>
-                            <input type="email" class="form-control">
-                            <div class="form-text">We'll never share your email with anyone else.</div>
+        <section>
+            <div class="container mt-5">
+                <div class="row d-flex flex-row-reverse">
+                    <div class="col-8 col-md-5">
+                        <h2 class="fuente mb-5">Tienda gamer</h2>
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label">Ingrese producto</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Ingrese precio</label>
+                                <input type="number" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Ingrese fotografia</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Descripcion" name="descripcion" style="height: 100%;"></textarea>
+                                    <label for="floatingTextarea">Descripción</label>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">select menu</label>
+                                <select class="form-select">
+                                    <option value="1" selected>Pc gamer</option>
+                                    <option value="2">Juegos</option>
+                                    <option value="3">Ps4</option>
+                                    <option value="4">Portatil</option>
+                                    <option value="5">Controles</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 mb-5">Submit</button>
+                        </form>
+                    </div>
+                    <div class="col-12 col-md-5 flex-row md-3 mt-5">
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="<?= base_url('/public/img/imagen1.jpg') ?>" class="img-fluid w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="<?= base_url('/public/img/imagen2.jpg') ?>" class="img-fluid w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="<?= base_url('/public/img/imagen3.jpg') ?>" class="img-fluid w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <div class="mb-3">
-                            <label class="form-label">Ingrese producto</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Ingrese precio</label>
-                            <input type="number" class="form-control">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Ingrese su direccion de domicilio</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Ingrese numero de celular</label>
-                            <input type="tel" class="form-control">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">select menu</label>
-                            <select class="form-select">
-                                <option value="1" selected>Pc gamer</option>
-                                <option value="2">Juegos</option>
-                                <option value="3">Ps4</option>
-                                <option value="4">Portatil</option>
-                                <option value="5">Controles</option>
-                            </select>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100">Submit</button>
-                    </form>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
     </main>
 
     <footer></footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src = "https://kit.fontawesome.com/3675f85246.js" crossorigin = "anónimo"> </script>
 </body>
 </html>
