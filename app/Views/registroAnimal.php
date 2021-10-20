@@ -25,7 +25,7 @@
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav">
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
+							<a class="nav-link active" aria-current="page" href="<?= site_url('/') ?>">Home</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="<?= site_url('/productos/registro') ?>">Registro productos</a>
@@ -49,7 +49,7 @@
 
                     <form action="<?= site_url('/animales/registro')?>" method="POST" class="mt-5">
                         <div class="mb-3">
-                            <label class="form-label">Animales</label>
+                            <label class="form-label">Nombre del animal</label>
                             <input type="text" class="form-control" name="Animales">
                         </div>
                         <div class="mb-3">
@@ -57,7 +57,7 @@
                             <input type="text" class="form-control" name="Fotografia">
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Precio unidad</label>
+                            <label class="form-label">Edad</label>
                             <input type="number" class="form-control" name="precio unidad">
                         </div>
                         <div class="mb-3">
