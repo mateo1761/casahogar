@@ -17,6 +17,15 @@ class Producto extends BaseController
         $descripcion=$this->request->getPost("descripcion");
         $tipo=$this->request->getPost("tipo");
 
+        if($this->validate('formularioProducto')){
+            echo ('Todo bien');
+        }
+        else {
+            $mensaje = "campos sin llenar";
+            return redirect()->to(site_url('/productos/registro'))->with('mensaje', $mensaje);
+        }
+
+        /*
         $datos=array(
             
             "producto"=>$producto,
@@ -27,7 +36,7 @@ class Producto extends BaseController
             
         );
 
-        print_r($datos);
+        print_r($datos);*/
 
     }
 }
