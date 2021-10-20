@@ -10,6 +10,24 @@ class Producto extends BaseController
     }
 
     public function registrar(){
-        echo('Soy el controlado y recibo datos');
+
+        $producto=$this->request->getPost("producto");
+        $precio=$this->request->getPost("precio");
+        $foto=$this->request->getPost("foto");
+        $descripcion=$this->request->getPost("descripcion");
+        $tipo=$this->request->getPost("tipo");
+
+        $datos=array(
+            
+            "producto"=>$producto,
+            "precio"=>$precio,
+            "foto"=>$foto,
+            "descripcion"=>$descripcion,
+            "tipo"=>$tipo
+            
+        );
+
+        print_r($datos);
+
     }
 }

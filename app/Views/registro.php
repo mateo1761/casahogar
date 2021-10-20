@@ -44,7 +44,7 @@
             <div class="container mt-5">
                 <div class="row d-flex flex-row-reverse">
                     <div class="col-8 col-md-5">
-                        <h2 class="fuente mb-5">Tienda gamer</h2>
+                        <h2 class="fuente mb-5">Registro productos</h2>
                         <form action="<?= site_url('/productos/registro/new') ?>" method="POST" >
                             <div class="mb-3">
                                 <label class="form-label">Ingrese producto</label>
@@ -66,15 +66,15 @@
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">select menu</label>
-                                <select class="form-select" name="tipo_pr">
-                                    <option value="1" selected>Pc gamer</option>
-                                    <option value="2">Juegos</option>
-                                    <option value="3">Ps4</option>
-                                    <option value="4">Portatil</option>
-                                    <option value="5">Controles</option>
+                                <select class="form-select" name="tipo">
+                                    <option value="1" selected>cuido</option>
+                                    <option value="2">Juguetes</option>
+                                    <option value="3">accesorios</option>
+                                    <option value="4">Ropa</option>
+                                    <option value="5">tasa</option>
                                 </select>
                             </div>
-                            <button type="submit" class="btn btn-primary w-100 mb-5">Submit</button>
+                            <button type="submit" class="btn btn-primary w-100 mb-5">Enviar</button>
                         </form>
                     </div>
                     <div class="col-12 col-md-5 flex-row md-3 mt-5">

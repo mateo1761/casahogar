@@ -36,6 +36,7 @@ $routes->get('/productos/registro', 'Producto::index');
 $routes->get('/animales/registro', 'Animales::index');
 
 $routes->post('/productos/registro/new', 'Producto::registrar');
+$routes->post('/animales/registro/nuevo', 'Animales::registrarAnimal');
 
 /*
  * --------------------------------------------------------------------

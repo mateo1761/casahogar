@@ -47,14 +47,14 @@
                         Registro de animales
                     </h3>
 
-                    <form action="<?= site_url('/animales/registro')?>" method="POST" class="mt-5">
+                    <form action="<?= site_url('/animales/registro/nuevo')?>" method="POST" class="mt-5">
                         <div class="mb-3">
                             <label class="form-label">Nombre del animal</label>
                             <input type="text" class="form-control" name="nombre">
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Fotografia</label>
-                            <input type="text" class="form-control" name="Fotografia">
+                            <input type="text" class="form-control" name="foto">
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Edad</label>
