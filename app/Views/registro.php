@@ -45,18 +45,18 @@
                 <div class="row d-flex flex-row-reverse">
                     <div class="col-8 col-md-5">
                         <h2 class="fuente mb-5">Tienda gamer</h2>
-                        <form>
+                        <form action="<?= site_url('/productos/registro/new') ?>" method="POST" >
                             <div class="mb-3">
                                 <label class="form-label">Ingrese producto</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" name="producto">
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Ingrese precio</label>
-                                <input type="number" class="form-control">
+                                <input type="number" class="form-control" name="precio">
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Ingrese fotografia</label>
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" name="foto">
                             </div>
                             <div class="mb-3">
                                 <div class="form-floating">
@@ -66,7 +66,7 @@
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">select menu</label>
-                                <select class="form-select">
+                                <select class="form-select" name="tipo_pr">
                                     <option value="1" selected>Pc gamer</option>
                                     <option value="2">Juegos</option>
                                     <option value="3">Ps4</option>

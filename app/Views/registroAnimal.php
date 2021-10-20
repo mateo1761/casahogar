@@ -50,7 +50,7 @@
                     <form action="<?= site_url('/animales/registro')?>" method="POST" class="mt-5">
                         <div class="mb-3">
                             <label class="form-label">Nombre del animal</label>
-                            <input type="text" class="form-control" name="Animales">
+                            <input type="text" class="form-control" name="nombre">
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Fotografia</label>
@@ -58,7 +58,7 @@
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Edad</label>
-                            <input type="number" class="form-control" name="precio unidad">
+                            <input type="number" class="form-control" name="edad">
                         </div>
                         <div class="mb-3">
                             <div class="form-floating">

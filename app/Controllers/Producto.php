@@ -8,4 +8,8 @@ class Producto extends BaseController
     {
         return view('registro');
     }
+
+    public function registrar(){
+        echo('Soy el controlado y recibo datos');
+    }
 }

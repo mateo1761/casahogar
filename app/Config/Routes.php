@@ -35,6 +35,8 @@ $routes->get('/', 'Home::index');
 $routes->get('/productos/registro', 'Producto::index');
 $routes->get('/animales/registro', 'Animales::index');
 
+$routes->post('/productos/registro/new', 'Producto::registrar');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
