@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 
+use App\Models\Productomodelo;
+
 class Producto extends BaseController
 {
     public function index()
@@ -11,6 +13,7 @@ class Producto extends BaseController
 
     public function registrar(){
 
+
         $producto=$this->request->getPost("producto");
         $precio=$this->request->getPost("precio");
         $foto=$this->request->getPost("foto");
@@ -18,7 +21,25 @@ class Producto extends BaseController
         $tipo=$this->request->getPost("tipo");
 
         if($this->validate('formularioProducto')){
-            echo ('Todo bien');
+
+            $datos=array(
+            
+                "producto"=>$producto,
+                "precio"=>$precio,
+                "foto"=>$foto,
+                "descripcion"=>$descripcion,
+                "tipo"=>$tipo  
+
+            );
+
+            try{
+                $producto = new Productomodelo();
+                $producto -> insert($datos);
+                return redirect()->to(site_url('/productos/registro'))->with('mensaje',"Exito guardando los datos");
+            }
+            catch(\Exception $error){
+                return redirect()->to(site_url('/productos/registro'))->with('mensaje',$error->getMessage());
+            }
         }
         else {
             $mensaje = "campos sin llenar";

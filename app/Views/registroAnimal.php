@@ -89,7 +89,7 @@
     </main>
 
     <section>
-        <?php ?>
+        <?php if(session('mensaje')): ?>
         <div class="modal fade" id="modal" tabindex="-1">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -98,12 +98,13 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                    <h5>Prueba</h5>
+                    <h5><?= session('mensaje') ?></h5>
                     </div>
                 </div>
             </div>
         </div>
-        <?php ?>
+        <?php unset($_SESSION['mensaje']); ?>
+        <?php endif ?>
     </section>
 
     <footer></footer>
