@@ -56,4 +56,17 @@ class Animales extends BaseController
 
         print_r($datos);*/
     }
+
+    public function buscar(){
+
+        $animalModelo = new Animalesmodelo();
+
+        try{
+            $animalesConsultado = $animalModelo->findAll();
+        }
+        catch(\Exception $error){
+            return redirect()->to(site_url('/animales/registro'))->with('mensaje',$error->getMessage);
+        }
+
+    }
 }
