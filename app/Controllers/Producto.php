@@ -45,19 +45,5 @@ class Producto extends BaseController
             $mensaje = "campos sin llenar";
             return redirect()->to(site_url('/productos/registro'))->with('mensaje', $mensaje);
         }
-
-        /*
-        $datos=array(
-            
-            "producto"=>$producto,
-            "precio"=>$precio,
-            "foto"=>$foto,
-            "descripcion"=>$descripcion,
-            "tipo"=>$tipo
-            
-        );
-
-        print_r($datos);*/
-
     }
 }

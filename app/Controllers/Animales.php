@@ -24,7 +24,7 @@ class Animales extends BaseController
 
             $datos=array(
                 "nombre"=>$nombre,
-                "foto"=>$foto,
+                "fotografia"=>$foto,
                 "edad"=>$edad,
                 "descripcion"=>$descripcion,
                 "tipo"=>$tipo
