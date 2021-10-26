@@ -80,14 +80,14 @@
                     <div class="col-12 col-md-5 flex-row md-3 mt-5">
                         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner">
-                                <div class="carousel-item active imagenes">
-                                    <img src="<?= base_url('/public/img/accesorios.jpg') ?>" class="img-fluid w-100" alt="accesorios">
+                                <div class="carousel-item active">
+                                    <img src="<?= base_url('/public/img/accesorios.jpg') ?>" class="img-fluid w-100 imagenes" alt="accesorios">
                                 </div>
-                                <div class="carousel-item imagenes">
-                                    <img src="<?= base_url('/public/img/jugetes.jpg') ?>" class="img-fluid w-100" alt="juguetes">
+                                <div class="carousel-item">
+                                    <img src="<?= base_url('/public/img/jugetes.jpg') ?>" class="img-fluid w-100 imagenes" alt="juguetes">
                                 </div>
-                                <div class="carousel-item imagenes">
-                                    <img src="<?= base_url('/public/img/cuido.jpg') ?>" class="img-fluid w-100" alt="cuido">
+                                <div class="carousel-item">
+                                    <img src="<?= base_url('/public/img/cuido.jpg') ?>" class="img-fluid w-100 imagenes" alt="cuido">
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
