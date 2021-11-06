@@ -44,29 +44,52 @@ class Animales extends BaseController
             $mensaje = "campos sin llenar";
             return redirect()->to(site_url('/animales/registro'))->with('mensaje',$mensaje);
         }
-
-        /*
-        $datos=array(
-            "nombre"=>$nombre,
-            "foto"=>$foto,
-            "edad"=>$edad,
-            "descripcion"=>$descripcion,
-            "tipo"=>$tipo
-        );
-
-        print_r($datos);*/
     }
 
     public function buscar(){
 
-        $animalModelo = new Animalesmodelo();
-
         try{
+            $animalModelo = new Animalesmodelo();
             $animalesConsultado = $animalModelo->findAll();
+            $animales = array('animales' => $animalesConsultado);
+            return view('listaAnimales',$animales);
         }
         catch(\Exception $error){
-            return redirect()->to(site_url('/animales/registro'))->with('mensaje',$error->getMessage);
+            return redirect()->to(site_url('/animales/registro'))->with('mensaje',$error->getMessage());
         }
+    }
 
+    public function eliminar($id){
+
+        try{
+            $animalModelo = new Animalesmodelo();
+            $animalModelo -> where('id',$id)->delete();
+            return redirect()->to(site_url('/animales/registro'))->with('mensaje',"Exito elimando el animal");
+        }
+        catch(\Exception $error){
+            return redirect()->to(site_url('/animales/registro'))->with('mensaje',$error->getMessage());
+        }
+    }
+
+    public function editar($id){
+
+        $nombre =$this->request->getPost('nombre');
+        $edad = $this->request->getPost('edad');
+        $descripcion = $this->request->getPost('descripcion');
+
+        $datos=array(
+            'nombre'=>$nombre,
+            'edad'=>$edad,
+            'descripcion'=>$descripcion
+        );
+
+        try{
+            $animalModelo = new Animalesmodelo();
+            $animalModelo -> update($id,$datos);
+            return redirect()->to(site_url('/animales/registro'))->with('mensaje',"Se realizo con exito los cambios");
+        }
+        catch(\Exception $error){
+            return redirect()->to(site_url('/animales/registro'))->with('mensaje',$error->getMessage());
+        }
     }
 }

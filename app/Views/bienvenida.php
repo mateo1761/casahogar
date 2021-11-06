@@ -76,11 +76,10 @@
 					<div class="col-8 text-center">
 						<h2>Hogar de animales <span class="fuente">Animalandia</span></h2>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sunt repellat tenetur, ipsum iste dolorum nihil consectetur, suscipit, aspernatur soluta a. Amet ab dolores, sunt sint impedit at vero alias.
-							Assumenda, accusantium id, mollitia expedita eum necessitatibus delectus, saepe dolores laboriosam tempore animi! Praesentium harum ipsam aspernatur quisquam facere ab adipisci nobis. Iusto porro voluptatum distinctio? Cupiditate aliquam rerum quidem!
-							Necessitatibus assumenda beatae, ipsa labore, repudiandae est eveniet expedita, modi vel tenetur deleniti culpa dolorem doloribus laudantium architecto consectetur voluptatem cum saepe repellat quo blanditiis quae veniam sunt! Unde, voluptates!
-							Numquam eum perferendis expedita cum rem odio, corrupti neque quod dolorem quibusdam sint ullam perspiciatis natus eos? Dolore minima ex beatae ut fugiat illo recusandae quasi, voluptates possimus explicabo est.
-							Quidem fugiat ut soluta placeat optio, ducimus non accusamus, pariatur beatae veritatis iure possimus temporibus. Repudiandae dignissimos expedita ullam labore quas dolorum, nulla, officia distinctio laboriosam quibusdam possimus ipsa cum!
+							Casa hogar Animalandia, atiende desde 1996 animales
+							y fauna silvestre en estado de abandono, 
+							ofreciendo atención integral, además somos fabricantes de comida 
+							y accesorios para todo tipo de mascota
 						</p>
 					</div>
 				</div>
@@ -141,6 +140,24 @@
 
 		<section class="fondoapp">
 			
+		</section>
+
+		<section>
+			<div class="container mb-5">
+				<div class="row mt-5">
+					<div class="col-5 col-md-6">
+						<img src="<?= base_url('/public/img/fotosection.jpg') ?>" alt="" class="img-fluid w-100 "/>
+					</div>
+					<div class="col-12 col-md-6 align-self-center">
+						<h2 class=" fw-bold">Hogar Animalandia</h2>
+						<p class="">
+							Somos una organización protectora de animales especializada, desde 1996, en la ayuda a perros y gatos maltratados y/o abandonados; una organización española totalmente independiente que no recibe subvenciones de organismos oficiales, empresas ni partidos políticos. Las cuotas de nuestros socios y las donaciones de nuestros simpatizantes permiten que nuestra labor sea sostenible y preservan nuestra libertad de acción. Contamos con un centro veterinario en Medellín abierto al público, que destina sus ingresos íntegramente al cuidado de los animales abandonados, y un centro de acogida en El Espinar.
+							<br>
+							Defendemos el “sacrificio cero”. Esto significa que establecemos una línea muy clara entre “el sacrificio” y “la eutanasia”. Nunca sacrificamos cachorros recién nacidos, ni animales cojos, ciegos, sordos o con enfermedades crónicas que sean tratables. Exclusivamente en caso de enfermedad en fase terminal que produzca un sufrimiento irreversible, se recurre a la eutanasia con toda la dignidad, el respeto y el amor que ellos merecen.
+						</p>
+					</div>
+				</div>
+			</div>
 		</section>
 	</main>
 
