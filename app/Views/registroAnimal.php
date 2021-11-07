@@ -83,6 +83,7 @@
                 </div>
                 <div class="col-12 col-md-5 align-self-end mb-5">
                     <img src="<?= base_url('public/img/registro1.png')?>" alt="imagen" class="img-fluid w-100">
+                    <a href="<?= site_url('/animales/listado')?>" class="btn btn-primary mt-2">ver inventario</a>
                 </div>
             </div>
         </div>

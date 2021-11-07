@@ -74,7 +74,8 @@
                                     <option value="5">tasa</option>
                                 </select>
                             </div>
-                            <button type="submit" class="btn btn-primary w-100 mb-5">Enviar</button>
+                            <button type="submit" class="btn btn-primary w-100 mb-2">Enviar</button>
+                            <a href="<?= site_url('/productos/listado')?>" class="btn btn-primary  w-100">ver inventario</a>
                         </form>
                     </div>
                     <div class="col-12 col-md-5 flex-row md-3 mt-5">
