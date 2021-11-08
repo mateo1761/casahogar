@@ -8,6 +8,9 @@
 	<link rel = "preconnect" href = "https://fonts.googleapis.com">
 	<link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
 	<link href = "https: //fonts.googleapis.com/css2? family = Festive & display = swap "rel =" stylesheet ">
+	<link rel = "preconnect" href = "https://fonts.googleapis.com">
+	<link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+	<link href = "https: //fonts.googleapis.com/css2? family = Dancing + Script & display = swap "rel =" stylesheet ">
 	<link rel="stylesheet" href="<?= base_url('public/styles/estilos.css') ?>">
 	<title>Animalandia</title>
 </head>
@@ -32,6 +35,12 @@
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="<?= site_url('/animales/registro') ?>">Registro animales</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="<?= site_url('/productos/listado') ?>">Lista de productos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="<?= site_url('/animales/listado') ?>">Lista de animales</a>
 						</li>
 					</ul>
 				</div>
@@ -75,7 +84,7 @@
 				<div class="row d-flex justify-content-center">
 					<div class="col-8 text-center">
 						<h2>Hogar de animales <span class="fuente">Animalandia</span></h2>
-						<p>
+						<p class="fuente2">
 							Casa hogar Animalandia, atiende desde 1996 animales
 							y fauna silvestre en estado de abandono, 
 							ofreciendo atención integral, además somos fabricantes de comida 
@@ -150,7 +159,7 @@
 					</div>
 					<div class="col-12 col-md-6 align-self-center">
 						<h2 class=" fw-bold">Hogar Animalandia</h2>
-						<p class="">
+						<p class="fuente2">
 							Somos una organización protectora de animales especializada, desde 1996, en la ayuda a perros y gatos maltratados y/o abandonados; una organización española totalmente independiente que no recibe subvenciones de organismos oficiales, empresas ni partidos políticos. Las cuotas de nuestros socios y las donaciones de nuestros simpatizantes permiten que nuestra labor sea sostenible y preservan nuestra libertad de acción. Contamos con un centro veterinario en Medellín abierto al público, que destina sus ingresos íntegramente al cuidado de los animales abandonados, y un centro de acogida en El Espinar.
 							<br>
 							Defendemos el “sacrificio cero”. Esto significa que establecemos una línea muy clara entre “el sacrificio” y “la eutanasia”. Nunca sacrificamos cachorros recién nacidos, ni animales cojos, ciegos, sordos o con enfermedades crónicas que sean tratables. Exclusivamente en caso de enfermedad en fase terminal que produzca un sufrimiento irreversible, se recurre a la eutanasia con toda la dignidad, el respeto y el amor que ellos merecen.

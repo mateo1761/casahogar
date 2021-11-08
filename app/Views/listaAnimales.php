@@ -33,6 +33,12 @@
 						<li class="nav-item">
 							<a class="nav-link" href="<?= site_url('/animales/registro') ?>">Registro animales</a>
 						</li>
+            <li class="nav-item">
+							<a class="nav-link" href="<?= site_url('/productos/listado') ?>">Lista de productos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Lista de animales</a>
+						</li>
 					</ul>
 				</div>
 			</div>
