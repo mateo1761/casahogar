@@ -72,7 +72,32 @@ class Animales extends BaseController
     }
 
     public function editar($id){
+        $nombre = $this->request->getPost('nombre');
+        //$tipo = $this->request->getPost('tipo');
+        $edad = $this->request->getPost('edad');
+        //$descripcion = $this->request->getPost('descripcion');
 
+        if($this->validate('formListadoAnm')){
+
+            $datos=array(
+                "nombre"=>$nombre,
+                "edad"=>$edad  
+            );
+
+            try{
+                $animalModelo = new Animalesmodelo();
+                $animalModelo -> update($id,$datos);
+                return redirect()->to(site_url('/animales/registro'))->with('mensaje',"Se realizo con exito los cambios");
+            }
+            catch(\Exception $error){
+                return redirect()->to(site_url('/animales/registro'))->with('mensaje',$error->getMessage());
+            }
+        }
+        else {
+            $mensaje = "campos sin llenar";
+            return redirect()->to(site_url('/animales/registro'))->with('mensaje', $mensaje);
+        }
+        /*
         $nombre =$this->request->getPost('nombre');
         $edad = $this->request->getPost('edad');
         $descripcion = $this->request->getPost('descripcion');
@@ -90,6 +115,6 @@ class Animales extends BaseController
         }
         catch(\Exception $error){
             return redirect()->to(site_url('/animales/registro'))->with('mensaje',$error->getMessage());
-        }
+        }*/
     }
 }
