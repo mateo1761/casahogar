@@ -97,24 +97,5 @@ class Animales extends BaseController
             $mensaje = "campos sin llenar";
             return redirect()->to(site_url('/animales/registro'))->with('mensaje', $mensaje);
         }
-        /*
-        $nombre =$this->request->getPost('nombre');
-        $edad = $this->request->getPost('edad');
-        $descripcion = $this->request->getPost('descripcion');
-
-        $datos=array(
-            'nombre'=>$nombre,
-            'edad'=>$edad,
-            'descripcion'=>$descripcion
-        );
-
-        try{
-            $animalModelo = new Animalesmodelo();
-            $animalModelo -> update($id,$datos);
-            return redirect()->to(site_url('/animales/registro'))->with('mensaje',"Se realizo con exito los cambios");
-        }
-        catch(\Exception $error){
-            return redirect()->to(site_url('/animales/registro'))->with('mensaje',$error->getMessage());
-        }*/
     }
 }
