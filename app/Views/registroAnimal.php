@@ -9,7 +9,7 @@
     <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
     <link href = "https: //fonts.googleapis.com/css2? family = Festive & display = swap "rel =" stylesheet ">
     <link rel="stylesheet" href="<?= base_url('/public/styles/estilos.css') ?>">
-    <title>Document</title>
+    <title>Registro animales</title>
 </head>
 <body>
     <header>
@@ -76,14 +76,12 @@
                                 <option value="5">Pez</option>
                             </select>
                         </div>
-                        <div class="btn btn-primary w-100 mb-5">
-                            <button class="btn boton" type="submit">Enviar</button>
-                        </div>
+                        <button class="btn btn-primary w-100 mt-2" type="submit">Enviar</button>
+                        <a href="<?= site_url('/animales/listado')?>" class="btn btn-success mt-2 w-100">ver inventario</a>
                     </form>
                 </div>
                 <div class="col-12 col-md-5 align-self-end mb-5">
                     <img src="<?= base_url('public/img/registro1.png')?>" alt="imagen" class="img-fluid w-100">
-                    <a href="<?= site_url('/animales/listado')?>" class="btn btn-primary mt-2">ver inventario</a>
                 </div>
             </div>
         </div>

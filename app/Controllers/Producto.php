@@ -48,6 +48,7 @@ class Producto extends BaseController
     }
 
     public function buscar(){
+        
         try{
             $Productomodelo = new Productomodelo();
             $productosConsultados = $Productomodelo->findAll();

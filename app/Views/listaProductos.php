@@ -41,25 +41,7 @@
 
     <main>
         <div class="container mt-5">
-            <div class="row row-cols-1 row-cols-md-5 g-4">
-                <?php foreach ($producto as $productos): ?>
-                    <div class="col">
-                        <div class="card">
-                            <img src="<?= $productos["foto"] ?>" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title"><?= $productos["producto"] ?></h5>
-                                <p class="card-text">precio: <?= $productos["precio"] ?></p>
-                                <p class="card-text"><?= $productos["descripcion"] ?></p>
-                                <a data-bs-toggle="modal" data-bs-target="#confirmacion <?= $productos['id'] ?>" href=# class="btn btn-danger w-100 mb-2"><i class="far fa-trash-alt"></i></a>
-                                <a data-bs-toggle="modal" data-bs-target="#editar <?= $productos['id'] ?>" href="#" class="btn btn-primary w-100"><i class="far fa-edit"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <section>
-                        
-                    </section>
-                <?php endforeach ?>
-            </div>
+			
         </div>
     </main>
 

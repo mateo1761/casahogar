@@ -60,7 +60,7 @@ class Animales extends BaseController
     }
 
     public function eliminar($id){
-
+        
         try{
             $animalModelo = new Animalesmodelo();
             $animalModelo -> where('id',$id)->delete();

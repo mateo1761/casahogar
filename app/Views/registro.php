@@ -9,7 +9,7 @@
     <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
     <link href = "https: //fonts.googleapis.com/css2? family = Festive & display = swap "rel =" stylesheet ">
     <link rel="stylesheet" href="<?= base_url('/public/styles/estilos.css') ?>">
-    <title>Document</title>
+    <title>Registro productos</title>
 </head>
 <body>
     <header>
@@ -75,7 +75,7 @@
                                 </select>
                             </div>
                             <button type="submit" class="btn btn-primary w-100 mb-2">Enviar</button>
-                            <a href="<?= site_url('/productos/listado')?>" class="btn btn-primary  w-100">ver inventario</a>
+                            <a href="<?= site_url('/productos/listado')?>" class="btn btn-success  w-100">ver inventario</a>
                         </form>
                     </div>
                     <div class="col-12 col-md-5 flex-row md-3 mt-5">
