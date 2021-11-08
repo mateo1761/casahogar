@@ -75,24 +75,29 @@ class Producto extends BaseController
 
     public function editar($id){
         $producto = $this->request->getPost('producto');
-        $tipo = $this->request->getPost('tipo');
+        //$tipo = $this->request->getPost('tipo');
         $precio = $this->request->getPost('precio');
-        $descripcion = $this->request->getPost('descripcion');
+        //$descripcion = $this->request->getPost('descripcion');
 
-        $datos = array(
-            'producto' => $producto,
-            'tipo' => $tipo,
-            'precio' => $precio,
-            'descripcion' => $descripcion
-        );
+        if($this->validate('formListadoPr')){
 
-        try {
-            $Productomodelo = new Productomodelo();
-            $Productomodelo -> update($id,$datos);
-            return redirect()->to(site_url('/productos/registro'))->with('mensaje','Se realizo con exito los cambios');
+            $datos=array(
+                "producto"=>$producto,
+                "precio"=>$precio  
+            );
+
+            try{
+                $Productomodelo = new Productomodelo();
+                $Productomodelo -> update($id,$datos);
+                return redirect()->to(site_url('/productos/registro'))->with('mensaje',"Se realizo con exito los cambios");
+            }
+            catch(\Exception $error){
+                return redirect()->to(site_url('/productos/registro'))->with('mensaje',$error->getMessage());
+            }
         }
-        catch(\Exception $error) {
-            return redirect()->to(site_url('/productos/registro'))->with('mensaje',$error->getMessage());
+        else {
+            $mensaje = "campos sin llenar";
+            return redirect()->to(site_url('/productos/registro'))->with('mensaje', $mensaje);
         }
     }
 }

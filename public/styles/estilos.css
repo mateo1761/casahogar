@@ -10,7 +10,7 @@
 
 .fondoapp
 {
-    background-image: url('img/imagenfondo.jpg');
+    background-image: url('../img/imagenfondo.jpg');
     background-attachment: fixed;
     height: 400px;
 }
