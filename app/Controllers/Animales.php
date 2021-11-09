@@ -98,4 +98,69 @@ class Animales extends BaseController
             return redirect()->to(site_url('/animales/registro'))->with('mensaje', $mensaje);
         }
     }
+
+    public function listaPerro(){
+
+        try{
+            $perro = new Animalesmodelo();
+            $consultados = $perro->findAll();
+            $animales=array('animales'=>$consultados);
+            return view('listaPerro', $animales);
+        }
+        catch(\Exception $error){
+            return redirect()->to(site_url('/animales/registro'))->with('mensaje',$error->getMessage());
+        }
+    }
+
+    public function listaGato(){
+
+        try{
+            $gato = new Animalesmodelo();
+            $consultados = $gato->findAll();
+            $animales=array('animales'=>$consultados);
+            return view('listaGato', $animales);
+        }
+        catch(\Exception $error){
+            return redirect()->to(site_url('/animales/registro'))->with('mensaje',$error->getMessage());
+        }
+    }
+
+    public function listaAve(){
+
+        try{
+            $ave = new Animalesmodelo();
+            $consultados = $ave->findAll();
+            $animales=array('animales'=>$consultados);
+            return view('listaAve', $animales);
+        }
+        catch(\Exception $error){
+            return redirect()->to(site_url('/animales/registro'))->with('mensaje',$error->getMessage());
+        }
+    }
+
+    public function listaCaballo(){
+
+        try{
+            $caballo = new Animalesmodelo();
+            $consultados = $caballo->findAll();
+            $animales=array('animales'=>$consultados);
+            return view('listaCaballo', $animales);
+        }
+        catch(\Exception $error){
+            return redirect()->to(site_url('/animales/registro'))->with('mensaje',$error->getMessage());
+        }
+    }
+
+    public function listaPez(){
+
+        try{
+            $pez = new Animalesmodelo();
+            $consultados = $pez->findAll();
+            $animales=array('animales'=>$consultados);
+            return view('listaPez', $animales);
+        }
+        catch(\Exception $error){
+            return redirect()->to(site_url('/animales/registro'))->with('mensaje',$error->getMessage());
+        }
+    }
 }

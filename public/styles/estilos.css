@@ -60,3 +60,15 @@
 {
     background-color: #495057;
 }
+
+a:link
+{
+    text-decoration: none;
+    color: white;
+}
+
+a:visited
+{
+    text-decoration: none;
+    color: white;
+}

@@ -39,6 +39,11 @@ $routes->get('/productos/listado', 'Producto::buscar');
 
 $routes->post('/productos/registro/new', 'Producto::registrar');
 $routes->post('/animales/registro/nuevo', 'Animales::registrarAnimal');
+$routes->post('/animales/listaperro', 'Animales::listaPerro');
+$routes->post('/animales/listagato', 'Animales::listaGato');
+$routes->post('/animales/listaAve', 'Animales::listaAve');
+$routes->post('/animales/listacaballo', 'Animales::listaCaballo');
+$routes->post('/animales/listapez', 'Animales::listaPez');
 $routes->post('/animales/editar/(:num)' , 'Animales::editar/$1');
 $routes->post('/productos/editar/(:num)' , 'Producto::editar/$1');
 

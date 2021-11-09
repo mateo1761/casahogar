@@ -99,24 +99,34 @@
 			<div class="container">
 				<div class="row d-flex justify-content-center mt-5 mb-5">
 					<div class="col-1">
-						<img src="<?= base_url('public/img/bird-icon.png') ?>" class="img-fluid zoom" alt="icono1">
-						<h5 class="text-center">Aves</h5>
+						<a href="<?= site_url('/animales/listaAve') ?>">
+							<img src="<?= base_url('public/img/bird-icon.png') ?>" class="img-fluid zoom" alt="icono1">
+							<h5 class="text-center">Aves</h5>
+						</a>
 					</div>
 					<div class="col-1">
-						<img src="<?= base_url('public/img/cat-icon.png') ?>" class="img-fluid zoom" alt="icono2">
-						<h5 class="text-center">Gatos</h5>
+						<a href="<?= site_url('/animales/listagato') ?>">
+							<img src="<?= base_url('public/img/cat-icon.png') ?>" class="img-fluid zoom" alt="icono2">
+							<h5 class="text-center">Gatos</h5>
+						</a>
 					</div>
 					<div class="col-1">
-						<img src="<?= base_url('public/img/fish-icon.png') ?>" class="img-fluid zoom" alt="icono4">
-						<h5 class="text-center">Peces</h5>
+						<a href="<?= site_url('/animales/listapez') ?>">
+							<img src="<?= base_url('public/img/fish-icon.png') ?>" class="img-fluid zoom" alt="icono4">
+							<h5 class="text-center">Peces</h5>
+						</a>
 					</div>
 					<div class="col-1">
-						<img src="<?= base_url('public/img/dog-icon.png')?>" class="img-fluid zoom" alt="icono3">
-						<h5 class="text-center">Perros</h5>
+						<a href="<?= site_url('/animales/listaperro') ?>">
+							<img src="<?= base_url('public/img/dog-icon.png')?>" class="img-fluid zoom" alt="icono3">
+							<h5 class="text-center">Perros</h5>
+						</a>
 					</div>
 					<div class="col-1">
-						<img src="<?= base_url('public/img/horse-icon.png') ?>" class="img-fluid zoom" alt="icono5">
-						<h5 class="text-center">Caballos</h5>
+						<a href="<?= site_url('/animales/listacaballo') ?>">
+							<img src="<?= base_url('public/img/horse-icon.png') ?>" class="img-fluid zoom" alt="icono5">
+							<h5 class="text-center">Caballos</h5>
+						</a>
 					</div>
 					<!--
 					<div class="col-8 text-center">
